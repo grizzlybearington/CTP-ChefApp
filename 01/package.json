@@ -1,0 +1,23 @@
+{
+  "name": "team-chef",
+  "version": "1.0.0",
+  "description": "Three unlikely personalities come together to build a full-stack chef-on-demand web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node_modules/.bin/nodemon -L app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/strohmer/CTP-ChefApp"
+  },
+  "author": "Jamaal, Jason, Sanghoon",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "express": "^4.14.0",
+    "mocha": "^3.1.0",
+    "nodemon": "^1.11.0"
+  }
+}
