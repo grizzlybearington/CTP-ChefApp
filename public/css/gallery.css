@@ -1,0 +1,23 @@
+td {
+    empty-cells: show;
+    height: 100px;
+    width: 120px;
+    align-content: center;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid black;
+    
+}
+
+
+
+td:hover {
+    background-color: aqua;
+    
+}
+
+table {
+    border-spacing: separate;
+    width: 600px;
+    
+}

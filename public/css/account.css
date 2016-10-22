@@ -1,0 +1,167 @@
+
+.pictures {
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+    padding: 2opx;
+}
+
+.pic li  {
+    display: inline-block;
+    list-style: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.img-thumbnail {
+    margin-right: 5px;
+    height: 75px;
+    width: 100px;
+}
+
+
+.img-thumbnail:hover{
+    
+    
+}
+
+.j {
+    height: auto;
+    background-image: url("stainless");
+    z-index: 10;
+    border-bottom-color: black;
+    padding: 20px;
+    
+}
+
+.top {
+    height: auto;
+    background-color: white;
+    border: 2px dotted black;
+    position: static;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.menu {
+    width: auto;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    color: green;
+}
+
+.menu li:hover {
+        background-color: black;
+        color: white;
+}
+
+.logo1 {
+    height: 12px;
+    width: 50px;
+    background-color:black;
+    margin-top: 3px;
+}
+
+.logo {
+    background-color: white;
+    height: auto;
+    width: auto;
+    min-height: 15px;
+    min-width: 15px;
+    color: black;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+    padding: 15px;
+    
+}
+
+.special {
+   display: inline-block;
+    margin: 20px;
+    width: 80%;
+    height: ;
+}
+
+.special p {
+    text-align: center;
+    text-emphasis: 3px;
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+
+label {
+    margin: 5px;
+    color: Black;
+    text-align: left;
+}
+
+input {
+    margin-left: 5px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+ .test {
+     height: 1000px;
+     width: auto;
+     background-image: url("wood.jpg");
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: cover;
+     position: static;
+     padding-top: 50px;;
+}
+
+.inside {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    background-color: rgba(255,255,255, 0.5);
+    border: 10px solid black;
+    border-radius: 20px;
+    border-color: rgba(0,0,0, 0.7);
+    padding-top: 30px;
+}
+.tt {
+    width: auto;
+    height: 200px;
+    display: inline-block;
+}
+
+form {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.form{
+    background-color: white;;
+    height: 90%;
+    width: auto;
+    color: black;
+    margin: 10px;
+}
+
+.form p {
+    width: 50%;
+    height: 20%;
+    color:black;
+}
+
+
+
+.bottom {
+    height: 200px;
+    width: auto;
+    background-color: white;
+    border: 2px black solid;
+}
+
+
+
