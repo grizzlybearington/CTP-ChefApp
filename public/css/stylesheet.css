@@ -1,0 +1,39 @@
+* {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+body {
+	margin-bottom: 70px;
+}
+nav ul {
+	font-family: sans-serif;
+}
+
+#myCarousel {
+	margin-top: 70px;
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-img {
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer {
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 17px;
+}
+
+.footer .col-xs-4 {
+	line-height: 200%;
+}
+
+.footer a {
+	color: white;
+}
