@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# ctp
-=======
 # ctpteamchef
 
 10/18 - Commits
@@ -17,4 +14,3 @@ Updated routes in "app.js" // able to link to html pages
 Plans are to research and plan how to implement Google Maps API into our project
 Continue to write front end HTML/CSS for our main pages
 Merge/restructure repository files based on recent commits
->>>>>>> master
