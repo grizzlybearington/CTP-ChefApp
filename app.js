@@ -36,6 +36,12 @@ app.get('/gallery', function(req,res){
 	res.sendFile(__dirname + '/public/html/gallery.html');
 });
 
+//ROUTE FOR PROFILE VIEWS
+app.get('profile',function(req,res){
+    res.send('Profile page is under construction.'); 
+});
+
+
 app.post('/', function (req, res) {
   res.send('POST REQUEST!');
 });
