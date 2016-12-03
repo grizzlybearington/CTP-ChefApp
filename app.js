@@ -46,6 +46,6 @@ app.get('profile',function(req,res){
 //  res.send('POST REQUEST!');
 //});
 
-app.listen(8001, function () {
+app.listen(8000, function () {
   console.log('Example app listening on port 8000!');
 });
