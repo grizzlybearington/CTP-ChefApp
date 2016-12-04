@@ -2,21 +2,21 @@
   "development": {
     "username": "pg_user",
     "password": "pg_pass",
-    "database": "MYAPPNAME_development",
+    "database": "myproject_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "pg_user",
     "password": "pg_pass",
-    "database": "myproject_test",
+    "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
     "username": "pg_user",
     "password": "pg_pass",
-    "database": "myproject_production",
+    "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

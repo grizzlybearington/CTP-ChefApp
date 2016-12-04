@@ -2,7 +2,8 @@
 
 var express = require('express');
 var app = express();
-
+var Sequelize = require('sequelize');
+app.use(express.static(__dirname + '/public'));
 
 /* This will redirect us to /home */
 app.get('/', function (req, res) {
@@ -22,7 +23,7 @@ app.get('/about', function(req,res){
 });
 
 // ROUTE FOR CREATING ACCOUNT
-app.get('/signup', function(req,res){
+app.get('/signup.html', function(req,res){
 	res.sendFile(__dirname + '/public/html/signup.html');
 });
 
