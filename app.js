@@ -18,18 +18,17 @@ app.get('/home', function(req,res){
 });
 
 // ROUTE FOR ABOUT US
-app.get('/about', function(req,res){
+app.get('/about.html', function(req,res){
 	res.sendFile(__dirname + '/public/html/about.html');
+});
+
+app.get('/login.html', function(req,res){
+   res.sendFile(__dirname +'/public/html/login.html'); 
 });
 
 // ROUTE FOR CREATING ACCOUNT
 app.get('/signup.html', function(req,res){
 	res.sendFile(__dirname + '/public/html/signup.html');
-});
-
-// ROUTE FOR CREATING CHEF ACCOUNT
-app.get('/c-signup', function(req,res){
-	res.send('Page is under construction');
 });
 
 // ROUTE FOR PHOTO GALLERY
