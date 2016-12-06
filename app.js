@@ -1,21 +1,17 @@
-/*Proper app.js file*/
-
 var express = require('express');
 var app = express();
 
+const home = require('./controllers/home');
+const articles = require('./controllers/articles');
+const authors = require('./controllers/authors');
+const signup = require('./controllers/signup');
 
-/* This will redirect us to /home */
-app.get('/', function (req, res) {
-  res.redirect('../home');
-});
+app.use('/', home);
+app.use('/articles', articles);
+app.use('/authors', authors);
+app.use('/signup', signup);
 
-// ROUTES FOR MAIN PAGES --------------
-
-// ROUTE FOR HOMEPAGE
-app.get('/home', function(req,res){
-	res.sendFile(__dirname + '/public/html/index.html');
-});
-
+/*
 // ROUTE FOR ABOUT US
 app.get('/about', function(req,res){
 	res.sendFile(__dirname + '/public/html/about.html');
@@ -38,7 +34,7 @@ app.get('/gallery', function(req,res){
 
 //ROUTE FOR PROFILE VIEWS
 app.get('profile',function(req,res){
-    res.send('Profile page is under construction.'); 
+    res.send('Profile page is under construction.');
 });
 
 
@@ -46,6 +42,9 @@ app.post('/', function (req, res) {
   res.send('POST REQUEST!');
 });
 
+*/
+
+module.exports = app;
 app.listen(8000, function () {
-  console.log('Example app listening on port 8000!');
+  console.log('Port 8000');
 });
