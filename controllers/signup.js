@@ -8,12 +8,7 @@ router.use(function timeLog(req, res, next) {
   console.log('Signup Controller :: Time: ', Date.now());
   next();
 });
-/*
-// define the root articles route
-router.get('/', function(req, res) {
-  res.sendFile(path.resolve('public/html/signup.html'));
-});
-*/
+
 router.get('/', function(req, res) {
   res.sendFile(path.resolve('public/html/signup.html'));
 });

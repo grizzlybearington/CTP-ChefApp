@@ -5,12 +5,15 @@ const home = require('./controllers/home');
 const articles = require('./controllers/articles');
 const authors = require('./controllers/authors');
 const signup = require('./controllers/signup');
+const login = require('./controllers/login');
+const createchef = require('./controllers/createchef');
 
 app.use('/', home);
 app.use('/articles', articles);
 app.use('/authors', authors);
 app.use('/signup', signup);
-
+app.use('/login', login);
+app.use('/createchef', createchef);
 /*
 // ROUTE FOR ABOUT US
 app.get('/about', function(req,res){
