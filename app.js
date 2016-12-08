@@ -1,51 +1,35 @@
 var express = require('express');
+var exphbs = require('express-handlebars');
+var bodyParser = require('body-parser');
 var app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.engine('handlebars', exphbs({
+  layoutsDir: './views/layouts',
+  defaultLayout: 'main'
+}));
+app.set('view engine', 'handlebars');
+app.set('views', `${__dirname}/views/`);
 
 const home = require('./controllers/home');
 const articles = require('./controllers/articles');
 const authors = require('./controllers/authors');
 const signup = require('./controllers/signup');
 const login = require('./controllers/login');
-const createchef = require('./controllers/createchef');
+const csignup = require('./controllers/c-signup');
+const about = require('./controllers/about');
+const users = require('./controllers/users');
 
 app.use('/', home);
 app.use('/articles', articles);
 app.use('/authors', authors);
 app.use('/signup', signup);
 app.use('/login', login);
-app.use('/createchef', createchef);
-/*
-// ROUTE FOR ABOUT US
-app.get('/about', function(req,res){
-	res.sendFile(__dirname + '/public/html/about.html');
-});
-
-// ROUTE FOR CREATING ACCOUNT
-app.get('/signup', function(req,res){
-	res.sendFile(__dirname + '/public/html/signup.html');
-});
-
-// ROUTE FOR CREATING CHEF ACCOUNT
-app.get('/c-signup', function(req,res){
-	res.send('Page is under construction');
-});
-
-// ROUTE FOR PHOTO GALLERY
-app.get('/gallery', function(req,res){
-	res.sendFile(__dirname + '/public/html/gallery.html');
-});
-
-//ROUTE FOR PROFILE VIEWS
-app.get('profile',function(req,res){
-    res.send('Profile page is under construction.');
-});
-
-
-app.post('/', function (req, res) {
-  res.send('POST REQUEST!');
-});
-
-*/
+app.use('/c-signup', csignup);
+app.use('/about', about);
+app.use('/users', users);
 
 module.exports = app;
 app.listen(8000, function () {
