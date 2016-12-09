@@ -1,8 +1,16 @@
 var express = require('express');
 var app = express();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+var bodyParser = require('body-parser');
+>>>>>>> e2350cc64ee75fe73b57b9eeaf5d0991a86214a8
 var Sequelize = require('sequelize');
 app.use(express.static(__dirname + '/public'));
+
+var urlencodedParser = bodyParser.urlencoded({extend:false});
+
+
 
 /* This will redirect us to /home */
 app.get('/', function (req, res) {
@@ -34,16 +42,24 @@ app.use('/createchef', createchef);
 /*
 >>>>>>> refs/remotes/origin/sang
 // ROUTE FOR ABOUT US
-app.get('/about.html', function(req,res){
+app.get('/about', function(req,res){
 	res.sendFile(__dirname + '/public/html/about.html');
 });
 
-app.get('/login.html', function(req,res){
+app.get('/login', function(req,res){
    res.sendFile(__dirname +'/public/html/login.html'); 
 });
 
+app.post('/login', urlencodedParser, function(req,res){
+   if(!req.body) return res.sendStatus(400);
+ console.log(req.body);
+    res.send('welcome' + req.body);
+});
+
+
+
 // ROUTE FOR CREATING ACCOUNT
-app.get('/signup.html', function(req,res){
+app.get('/signup', function(req,res){
 	res.sendFile(__dirname + '/public/html/signup.html');
 });
 
@@ -53,8 +69,13 @@ app.get('/gallery', function(req,res){
 });
 
 //ROUTE FOR PROFILE VIEWS
+<<<<<<< HEAD
 app.get('profile',function(req,res){
     res.send('Profile page is under construction.');
+=======
+app.get('/profile',function(req,res){
+    res.send('Profile page is under construction.'); 
+>>>>>>> e2350cc64ee75fe73b57b9eeaf5d0991a86214a8
 });
 
 

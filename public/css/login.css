@@ -36,10 +36,11 @@
 }
 
 #col2 {
-    border: 5px black solid;
+    border: 5px white solid;
+    border-radius: 5px;
     height: 400px;
     width: 400px;
-    background-color: white;
+    background-color: darkseagreen;
     opacity: 1;
 }
 
@@ -47,6 +48,7 @@
     visibility: hidden;
 }
 
+<<<<<<< HEAD
 =======
 /* Form */
 .form {
@@ -166,3 +168,20 @@ body:before {
   height: 100%;
 }
 >>>>>>> refs/remotes/origin/sang
+=======
+.title {
+  float: left;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;}
+
+.submit {
+  text-align: right;}
+
+
+.logdiv {
+    
+    vertical-align: middle;
+    text-align: center;
+}
+>>>>>>> e2350cc64ee75fe73b57b9eeaf5d0991a86214a8
