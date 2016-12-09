@@ -35,10 +35,11 @@
 }
 
 #col2 {
-    border: 5px black solid;
+    border: 5px white solid;
+    border-radius: 5px;
     height: 400px;
     width: 400px;
-    background-color: darkblue;
+    background-color: darkseagreen;
     opacity: 1;
 }
 
@@ -56,4 +57,8 @@
   text-align: right;}
 
 
-
+.logdiv {
+    
+    vertical-align: middle;
+    text-align: center;
+}

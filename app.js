@@ -2,6 +2,7 @@
 
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var Sequelize = require('sequelize');
 app.use(express.static(__dirname + '/public'));
 
