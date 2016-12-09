@@ -6,6 +6,10 @@ var bodyParser = require('body-parser');
 var Sequelize = require('sequelize');
 app.use(express.static(__dirname + '/public'));
 
+var urlencodedParser = bodyParser.urlencoded({extend:false});
+
+
+
 /* This will redirect us to /home */
 app.get('/', function (req, res) {
   res.redirect('../home');
@@ -19,16 +23,24 @@ app.get('/home', function(req,res){
 });
 
 // ROUTE FOR ABOUT US
-app.get('/about.html', function(req,res){
+app.get('/about', function(req,res){
 	res.sendFile(__dirname + '/public/html/about.html');
 });
 
-app.get('/login.html', function(req,res){
+app.get('/login', function(req,res){
    res.sendFile(__dirname +'/public/html/login.html'); 
 });
 
+app.post('/login', urlencodedParser, function(req,res){
+   if(!req.body) return res.sendStatus(400);
+ console.log(req.body);
+    res.send('welcome' + req.body);
+});
+
+
+
 // ROUTE FOR CREATING ACCOUNT
-app.get('/signup.html', function(req,res){
+app.get('/signup', function(req,res){
 	res.sendFile(__dirname + '/public/html/signup.html');
 });
 
@@ -38,7 +50,7 @@ app.get('/gallery', function(req,res){
 });
 
 //ROUTE FOR PROFILE VIEWS
-app.get('profile',function(req,res){
+app.get('/profile',function(req,res){
     res.send('Profile page is under construction.'); 
 });
 

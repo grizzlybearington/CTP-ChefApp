@@ -5,14 +5,6 @@ $(document).ready(function(){
     var password =$("#password").val();
     
     
-    if ( email =='' || password==''){
-        
-        
-    }
-    
-      window.onload =function(){
-          document.getElementById("to");
-      }            
-                  
+     
                   
 });
