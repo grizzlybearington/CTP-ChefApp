@@ -38,11 +38,22 @@
     border: 5px black solid;
     height: 400px;
     width: 400px;
-    background-color: white;
+    background-color: darkblue;
     opacity: 1;
 }
 
 #col1, #col3 {
     visibility: hidden;
 }
+
+.title {
+  float: left;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;}
+
+.submit {
+  text-align: right;}
+
+
 
