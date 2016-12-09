@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
   models.User.findAll({})
     .then(function (users) {
       if (users != null) {
-        res.send('Users List: <br /><pre>' + JSON.stringify(users, null, 4) + '</pre>');
+        res.render('users/list', {users, users});
       } else {
         res.send('No Users found');
       }
