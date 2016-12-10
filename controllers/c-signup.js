@@ -5,12 +5,12 @@ var router = express.Router();
 // middleware that is specific to this router (We did not cover this in class)
 // It applies to all routes defined in this controller
 router.use(function timeLog(req, res, next) {
-  console.log('CreateChef Controller :: Time: ', Date.now());
+  console.log('c-signup Controller :: Time: ', Date.now());
   next();
 });
 
 router.get('/', function(req, res) {
-  res.sendFile(path.resolve('public/html/createchef.html'));
+  res.sendFile(path.resolve('public/html/c-signup.html'));
 });
 
 module.exports = router;

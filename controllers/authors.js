@@ -9,7 +9,7 @@ router.use(function timeLog(req, res, next) {
   next();
 });
 
-
+/*
 // define the root authors route
 router.get('/', function(req, res) {
   models.Author.findAll({})
@@ -20,6 +20,36 @@ router.get('/', function(req, res) {
         res.send('No Authors found');
       }
     });
+});
+*/
+
+router.get('/', function(req, res) {
+  models.Author.findAll({})
+    .then(function (authors) {
+      if(authors != null) {
+        res.render('authors/list', {authors: authors});
+      } else {
+        res.send('No Authors found');
+      }
+    });
+});
+
+router.get('/new', function(req, res) {
+  res.render('authors/new');
+});
+
+router.post('/', function(req, res) {
+  console.log(req.body);
+  models.Author.create({
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    bio: req.body.bio
+  }).then(function (author) {
+    res.redirect('/authors')
+  }).catch(function (e) {
+    //res.send('ERROR: creating an author');
+    res.render('authors/new', {errors: e.errors});
+  })
 });
 
 // define the specific author route
@@ -34,7 +64,7 @@ router.get('/:id', function(req, res) {
     });
 });
 
-
+/*
 // VERY BAD CODE. This was only for quick demonstration purposes
 // Next lecture we will look at using HTML forms and POST requests
 router.get('/new/:first_name/:last_name/:bio', function (req,res) {
@@ -48,5 +78,5 @@ router.get('/new/:first_name/:last_name/:bio', function (req,res) {
     res.send('ERROR: creating an author');
   })
 });
-
+*/
 module.exports = router;
