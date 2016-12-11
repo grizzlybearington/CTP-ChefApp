@@ -1,16 +1,5 @@
 # ctpteamchef
 
-10/18 - Commits
-
-Added HTML/CSS front end code for our homepage
-Pushed local branch to repository:
-Added sequelize functionality
-Created database that mimics the DB created in the lab
-Updated routes in "app.js" // able to link to html pages
-
-
-10/19 - Stand Up
-
-Plans are to research and plan how to implement Google Maps API into our project
-Continue to write front end HTML/CSS for our main pages
-Merge/restructure repository files based on recent commits
+Executive Summary:
+	After a long day of work, sometimes you just want to relax at home and expect "in-room service". Imagine with just one tap, chefs in your area will offer their list of cuisines and come for you. It is perfect for those who are living in a busy urban environment. Users can escape the crowded restaurants, not wait in a line and enjoy their favorite dishes at home. This web application will provide services to those who want to have a chef come in person and cook their favorites.
+	Cooking shows has been a trend and having chefs cook for you just like the cooking shows will spark interests in many people. Having this experience will be the next trend of the cooking industry. There are no any applications that matches users with chefs. One application that is similar to this idea is Yelp, but Yelp only shows restaurants. Another major need for this application would be that chefs don't get much opportunities to cook for people. It will provide more job opportunities to chefs who wants to have extra income. Providing comfort to the users and extra income to the chefs is a major reason behind this application.
