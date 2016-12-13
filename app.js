@@ -21,6 +21,7 @@ const login = require('./controllers/login');
 const csignup = require('./controllers/c-signup');
 const about = require('./controllers/about');
 const users = require('./controllers/users');
+const profile = require('./controllers/profile');
 
 app.use('/', home);
 app.use('/articles', articles);
@@ -30,6 +31,7 @@ app.use('/login', login);
 app.use('/c-signup', csignup);
 app.use('/about', about);
 app.use('/users', users);
+app.use('/profile', profile);
 
 module.exports = app;
 app.listen(8000, function () {
