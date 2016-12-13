@@ -52,7 +52,26 @@ body {
     
 }
 
-.col-md-3, col-md-12 {
+.col-md-3, .col-md-9 {
     background-color: white;
-    opacity: 0.5;
+    border:  1px solid #777;
 }
+
+.footer {
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 14px;
+}
+
+.footer .col-xs-4 {
+	line-height: 200%;
+}
+
+.footer a {
+	color: white;
+}
+
+
